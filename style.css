@@ -1,0 +1,72 @@
+
+body{
+    justify-content: center;
+    background-color: #6f6f77; /* Цвет фона */
+    position: relative;
+}
+.grid{
+    justify-content: center;
+    display: grid; /*разметка поля 4*4 */
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: repeat(4, 100px);
+}
+
+.grid>*{
+    overflow: hidden;
+    /*дизайн*/
+    margin: 5px;
+    border-radius: 50px;
+    border: 10px inset #000000
+}
+
+.buttons{
+    margin-top: 5px;
+    text-align: center;
+}
+.knopka{
+    /* текст */
+    font-size: 20px;
+    color: #211f21;
+    background: rgb(175, 178, 173);
+    padding: .10em 3em; /* отступ от текста */
+    border-radius: 30px;
+    border: 7px inset #35363a;
+}
+.knopka:hover {
+    background: rgba(110, 98, 98, 0.14);
+}
+.knopka:active {
+    background: rgb(190, 36, 36);
+}
+h1{
+    text-align: center;
+}
+
+.help{
+    margin-top: 5px;
+    text-align: center;
+}
+.magic{
+    opacity: 0;
+    transition: opacity 0.3s;}
+.magic:hover{
+    opacity: 100;
+    transition: opacity 0.3s;
+}
+
+.red{
+    margin: 5px;
+    border-radius: 50px;
+    border: 10px inset #000000;
+    background: rgb(190, 36, 36);
+    cursor:  pointer;
+}
+.green{
+    margin: 5px;
+    border-radius: 50px;
+    border: 10px inset #000000;
+    background: rgb(57, 168, 47);
+    cursor:  pointer;
+}
+
+
